@@ -13,13 +13,12 @@ import {
   ListItemText,
   ListItemIcon,
   Avatar,
-  requirePropFactory,
   IconButton,
   Drawer,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useEffect, useState } from "react";
-import { Circle, Menu as MenuIcon, PointOfSale } from "@mui/icons-material";
+import { Circle, Menu as MenuIcon } from "@mui/icons-material";
 
 const theme = createTheme({
   palette: {
