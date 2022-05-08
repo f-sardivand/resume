@@ -64,6 +64,7 @@ function App() {
       <div>
         <AppBar
           color={appBarColor}
+          style={{paddingTop:12, paddingBottom:12}}
           elevation={appBarColor === "primary" ? 1 : 0}
           position="sticky"
         >
@@ -147,7 +148,7 @@ function App() {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Avatar src={require("./static/images/avatar/person.jpg")} />
+              <Avatar style={{width:"55px", height:"55px"}} src={require("./static/images/avatar/person.jpg")} />
             </Box>
           </Toolbar>
         </AppBar>
@@ -158,10 +159,10 @@ function App() {
                 onClick={() => {
                   document
                     .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" });
+                    .scrollIntoView(true);
                   setOpen(false);
                 }}
-                button
+
               >
                 <ListItemText primary="About" />
               </ListItem>
@@ -169,7 +170,7 @@ function App() {
                 onClick={() => {
                   document
                     .getElementById("experience")
-                    .scrollIntoView({ behavior: "smooth" });
+                    .scrollIntoView(true);
                   setOpen(false);
                 }}
                 button
@@ -180,7 +181,7 @@ function App() {
                 onClick={() => {
                   document
                     .getElementById("education")
-                    .scrollIntoView({ behavior: "smooth" });
+                    .scrollIntoView(true);
                   setOpen(false);
                 }}
                 button
@@ -191,7 +192,7 @@ function App() {
                 onClick={() => {
                   document
                     .getElementById("skills")
-                    .scrollIntoView({ behavior: "smooth" });
+                    .scrollIntoView(true);
                   setOpen(false);
                 }}
                 button
@@ -325,13 +326,13 @@ function App() {
                 <List>
                   <ListItem>
                     <ListItemIcon>
-                      <Circle style={{ color: "black" }} />
+                      <Circle style={{ color: theme.palette.success.dark }} />
                     </ListItemIcon>
                     <ListItemText primary="Bachelor of Software Engineering from Qazvin Azad University" />
                   </ListItem>
                   <ListItem>
                     <ListItemIcon>
-                      <Circle style={{ color: "black" }} />
+                      <Circle style={{ color: theme.palette.success.dark }} />
                     </ListItemIcon>
                     <ListItemText primary=".Net framework course certificate from Tehran Technical Complex" />
                   </ListItem>
@@ -367,26 +368,26 @@ function App() {
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
-                    <Circle style={{ color: theme.palette.success.light }} />
+                    <Circle style={{ color: theme.palette.success.dark }} />
                   </ListItemIcon>
                   <ListItemText primary="nodejs & express & mongodb" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
-                    <Circle style={{ color: theme.palette.success.light }} />
+                    <Circle style={{ color: theme.palette.success.dark }} />
                   </ListItemIcon>
                   <ListItemText primary="socket io" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
-                    <Circle style={{ color: theme.palette.success.light }} />
+                    <Circle style={{ color: theme.palette.success.dark }} />
                   </ListItemIcon>
                   <ListItemText primary="familar with pwa" />
                 </ListItem>
 
                 <ListItem>
                   <ListItemIcon>
-                    <Circle style={{ color: theme.palette.success.light }} />
+                    <Circle style={{ color: theme.palette.success.dark }} />
                   </ListItemIcon>
                   <ListItemText primary="c#, sql server, mysql" />
                 </ListItem>
